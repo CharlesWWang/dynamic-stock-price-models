@@ -22,7 +22,7 @@ INVESTOR_SIGNALS = {
     'BuyBig': ShelfMembershipFn(0.2, 0.4)
 }
 
-w = 0.01  # TODO: Figure out a good pay to pass this as a cmd argument.
+w = 0.01  # TODO: Figure out a good way to pass this as a cmd argument.
 PRICE_PERCENT_CHANGE_SIGNALS = {
     'NegativeLarge': ShelfMembershipFn(-2*w, -3*w),
     'NegativeMedium': SymmetricMembershipFn(-3*w, -w),
