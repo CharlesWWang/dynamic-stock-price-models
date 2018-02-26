@@ -19,9 +19,27 @@ Here are a few of the qualitative measures encoded in the figure.
 
 ![alt text](figures/figure_1_2.png)
 
-# Usage
+The model predicts the log ratio (percent change) of stock price between two consecutive time points based on **heuristics** that describe investment strategies of participating investor groups. Below is a list of some of the heuristics used by the model. Refer to the paper for a more in-depth description.
 
-**As of the most recent commit, fuzzy sets are implemented.** Figures 1 and 2 in the paper, depicting the memberhsip domains of specific fuzzy sets can now be reproduced by running
+1. Moving Averages [x]
+2. Resistance and Support [ ]
+3. Trend lines [ ]
+4. Market manipulators [ ]
+5. Volume and strength rules [ ]
+6. Band and stop rules [ ]
+
+# Usage
+***As of the lateset commit, only the Moving Averages heuristic is implemented***. To quickly run three simulations with only this heuristic (essentially reproducing figure 3 in the paper), run
+
+```python
+python run.py 1 0.2 10 100 500 0.05 2 -v
+```
+
+![alt text](figures/figure_3.png')
+
+Refer to `run.py` to understand what parameter each value is for.
+
+Figures 1 and 2 in the paper, depicting the memberhsip domains of specific fuzzy sets can now be reproduced by running.
 
 ```python
 python generate_figures.py
