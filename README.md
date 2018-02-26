@@ -35,7 +35,8 @@ The model predicts the log ratio (percent change) of stock price between two con
 python run.py 1 0.2 10 100 500 0.05 2 -v
 ```
 
-![alt text](figures/figure_3.png')
+![alt text](figures/figure_3.png)
+
 
 Refer to `run.py` to understand what parameter each value is for.
 
