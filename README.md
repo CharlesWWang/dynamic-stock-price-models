@@ -29,7 +29,7 @@ The model predicts the log ratio (percent change) of stock price between two con
 6. Band and stop rules [ ]
 
 # Usage
-***As of the lateset commit, only the Moving Averages heuristic is implemented***. To quickly run three simulations with only this heuristic (essentially reproducing figure 3 in the paper), run
+***As of the latest commit, only the Moving Averages heuristic is implemented***. To quickly run three simulations with only this heuristic (essentially reproducing figure 3 in the paper), run
 
 ```python
 python run.py 1 0.2 10 100 500 0.05 2 -v
